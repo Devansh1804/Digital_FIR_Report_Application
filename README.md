@@ -53,5 +53,6 @@ git clone -b master my_repo_link
 
 ---
 
+
 ## 👤 Author
-Devansh Upadhyay
+**Devansh Upadhyay**
