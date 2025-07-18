@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/welcome_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WELCOME!"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/welcome_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome, Admin"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@android:color/black" />
+
+            <!-- Cards for report statistics -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@android:color/white"
+                    android:elevation="4dp">
+
+                    <TextView
+                        android:text="Total Reports Filed"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/total_reports_count"
+                        android:text="0"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@android:color/white"
+                    android:elevation="4dp">
+
+                    <TextView
+                        android:text="Reports in Review"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/in_review_count"
+                        android:text="0"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@android:color/white"
+                    android:elevation="4dp">
+
+                    <TextView
+                        android:text="Reports Approved/Resolved"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/approved_count"
+                        android:text="2"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@android:color/white"
+                    android:elevation="4dp">
+
+                    <TextView
+                        android:text="Last Report Date"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/last_report_date"
+                        android:text="YYYY-MM-DD"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/logout_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Logout"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="@android:color/holo_red_dark" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/sos_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="SOS"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:backgroundTint="@null"
+        android:background="@drawable/round_red_button" />
+
+
+
+    <ImageButton
+        android:id="@+id/menu_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@id/sos_button"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/round_button"
+        android:src="@drawable/ic_more_vert_24"
+        android:tint="@android:color/white"
+        android:contentDescription="Menu" />
+
+    <Button
+        android:id="@+id/button_northeast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textColor="@android:color/white"
+        android:background="@drawable/round_purple_button"
+        android:visibility="gone"
+        android:layout_alignBottom="@id/menu_button"
+        android:layout_toStartOf="@id/menu_button"
+        android:layout_marginEnd="12dp" />
+
+    <Button
+        android:id="@+id/button_west"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siren"
+        android:textColor="@android:color/white"
+        android:background="@drawable/round_purple_button"
+        android:visibility="gone"
+        android:layout_alignBottom="@id/menu_button"
+        android:layout_toStartOf="@id/button_northeast"
+        android:layout_marginEnd="12dp" />
+</RelativeLayout>
