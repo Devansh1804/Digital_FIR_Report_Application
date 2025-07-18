@@ -27,5 +27,31 @@ A mobile application built using **Android Studio** and **Java**, designed to al
 
 1. **Clone this repository**  
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone my_repo_link
    cd your-repo-name
+   
+2. **Open in Android Studio**
+   Open Android Studio → Open an existing project → Select the cloned folder
+
+3. **Ensure dependencies are set up**
+   Android SDK installed
+   Java SDK (JDK 8+ recommended)
+   No external libraries required
+
+4. **Run the app**
+   Use an emulator or connect your Android device
+   Click ▶️ Run in Android Studio
+
+---
+
+## 🌳 Branch Information
+🔀 Note: The primary branch of this repository is master (not main)
+
+```bash
+git clone -b master my_repo_link
+
+
+---
+
+## 👤 Author
+Devansh Upadhyay
