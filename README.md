@@ -44,15 +44,5 @@ A mobile application built using **Android Studio** and **Java**, designed to al
 
 ---
 
-## 🌳 Branch Information
-🔀 Note: The primary branch of this repository is master (not main)
-
-```bash
-git clone -b master my_repo_link
-
-
----
-
-
 ## 👤 Author
 **Devansh Upadhyay**
